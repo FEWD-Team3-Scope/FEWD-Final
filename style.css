@@ -6,9 +6,31 @@
 body { font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; }
 
 /* Navbar */
-.btn-contact { background-color: var(--primary-teal); color: white; border-radius: 20px; font-weight: 500; }
-.btn-contact:hover { background-color: #003a4d; color: white; }
+.navbar-brand img:hover {
+    opacity: 0.8;
+}
+.active-custom {
+    color: var(--accent-blue) !important;
+    font-weight: 500;
+}
 
+.hero-section h1 {
+    text-shadow: 3px 3px 5px rgb(0, 0, 0);
+
+}
+.hero-section p {
+    text-shadow: 3px 3px 5px rgb(0, 0, 0);
+}
+
+.active-custom {
+    color: var(--accent-blue) !important;
+}
+
+.btn-contact {
+    background-color: #004d66;
+    color: white;
+    border-radius: 25px;
+}
 .btn-contact:hover {
     color: #004d66;
     background-color: #c0c4c5;
