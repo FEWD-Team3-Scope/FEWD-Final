@@ -22,7 +22,7 @@ body { font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; }
 
 /*footer*/
 .footer {
-    background-color: #004d66; /* Your specific branding color */
+    background-color: #004d66;
     color: white;
 }
 
@@ -42,7 +42,7 @@ body { font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; }
 
 /* Centered Logo Styling */
 .footer-logo-main {
-    height: 60px; /* Adjusted size for the center position */
+    height: 60px; 
     width: auto;
     transition: opacity 0.3s;
 }
