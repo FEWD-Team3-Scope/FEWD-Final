@@ -53,7 +53,15 @@ body {
     background-color: #34b3e6;
     color: #333;
 }
-
+.hero-section {
+    height: 450px;
+    background-image: linear-gradient(rgba(1,1,1,0.9), rgba(0,0,0,0.4)), url('/images/carhero.jpg');
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
 /*footer*/
 .footer {
     background-color: #004d66; 
