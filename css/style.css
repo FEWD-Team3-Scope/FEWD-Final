@@ -5,6 +5,10 @@
     --white: #ffffff;
 }
 
+body {
+    font-family: 'nunito',Tahoma, Geneva, Verdana, sans-serif;;
+}
+
 /* Nav */
 
 .navbar-brand img:hover {
