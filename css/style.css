@@ -101,6 +101,8 @@ body {
     background-color: #c0c4c5;
     color: #004d66;
 }
+/* Why Choose Us */
+.why-choose-us { background-color: var(--primary-blue); }
 
 /*footer*/
 .footer {
