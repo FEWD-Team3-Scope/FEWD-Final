@@ -103,6 +103,32 @@ body {
 }
 /* Why Choose Us */
 .why-choose-us { background-color: var(--primary-blue); }
+/* Help & Tips */
+.tip-card {
+    height: 250px;
+    border-radius: 12px;
+    overflow: hidden;
+    position: relative;
+    background-size: cover;
+    background-position: center;
+}
+.card-reg { background-image: url('/images/registerCar.jpeg'); }
+.card-renew { background-image: url('/images/renewalTips.jpg'); }
+.card-transfer { background-image: url('/images/transferguide.jpg'); }
+
+.tip-overlay {
+    background: rgba(0, 0, 0, 0.4);
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+}
+.btn-tip-action { background-color: var(--primary-blue); color: white; border-radius: 20px; font-size: 0.8rem; }
+
+.btn-tip-action:hover {
+    background-color: #c0c4c5;
+    color: #004d66;
+}
 
 /*footer*/
 .footer {
