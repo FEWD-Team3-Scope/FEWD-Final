@@ -48,10 +48,10 @@ body {
     background-position: center;
     padding-bottom: 100px;
 }
-.btn-hero-primary { background-color: var(--accent-blue); color: white; border-radius: 20px;}
+.btn-hero-primary { background-color: var(--primary-blue); color: white; border-radius: 20px;}
 .btn-hero-primary:hover {
-    background-color: #34b3e6;
-    color: #333;
+    background-color: #c0c4c5;
+    color: #004d66;
 }
 .hero-section {
     height: 450px;
@@ -95,6 +95,11 @@ body {
     line-height: 56px;
     border-radius: 50%;
     margin: 0 auto;
+}
+.btn-view-all { background-color: var(--primary-blue); color: white; border-radius: 20px; }
+.btn-view-all:hover {
+    background-color: #c0c4c5;
+    color: #004d66;
 }
 
 /*footer*/
