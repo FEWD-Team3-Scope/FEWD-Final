@@ -149,6 +149,112 @@ body {
     font-size: small;
 }
 
+/*Community*/
+/* Features */
+.features-section {
+    background-color: var(--bg-light);
+    padding: 80px 0;
+}
+
+.feature-card {
+    background: white;
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 0 4px 15px rgba(0,0,0,0.05);
+    text-align: center;
+}
+
+/* Feature Image Styling */
+.img-wrapper {
+    height: 220px; /* Fixed height to keep cards uniform */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 20px;
+    overflow: hidden;
+}
+
+.feature-img {
+    max-height: 100%;
+    width: auto;
+    object-fit: contain; /* Keeps the isometric illustrations from stretching */
+    transition: transform 0.3s ease;
+}
+
+.feature-card:hover .feature-img {
+    transform: scale(1.1); /* Subtle zoom effect on hover */
+}
+
+.feature-card {
+    background: white;
+    padding: 30px;
+    border-radius: 8px;
+    box-shadow: 0 10px 30px rgba(0,0,0,0.08);
+    text-align: center;
+    border: none;
+}
+
+.btn-action {
+    background-color: var(--accent-blue);
+    color: white;
+    border-radius: 20px;
+    padding: 8px 30px;
+    font-size: 0.9rem;
+}
+.btn-action:hover {
+    color: #004d66;
+    background-color: #c0c4c5;
+}
+.card-body {
+    max-height: 200px;
+}
+
+.card-body-content {
+    font-size: small;
+    text-align: start;
+    margin-top: 10px;
+    padding: 10px;
+    background-color: #7ca8bf6e;
+    border-radius: 7px
+    
+}
+
+
+/* FAQ */
+
+/* Custom Accordion Styling */
+.faq-section {
+    margin-bottom: 50px;
+}
+.faq-title {
+    font-size: 3rem;
+    font-weight: 900;
+    padding: 50px 0px 0px 0px;
+}
+.custom-faq-btn {
+    background-color: var(--primary-blue) !important;
+    color: white !important;
+    border-radius: 4px !important;
+    padding: 18px;
+    box-shadow: none !important;
+}
+
+/* Changes the color of the accordion arrow to white */
+.accordion-button::after {
+    filter: brightness(0) invert(1);
+}
+
+/* Ensures the answer box looks clean */
+.accordion-body {
+    border-radius: 0 0 4px 4px;
+    color: #555;
+    font-size: 0.95rem;
+}
+
+.accordion-item {
+    background: transparent;
+}
+
 /*footer*/
 .footer {
     background-color: #004d66; 
