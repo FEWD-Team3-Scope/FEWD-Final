@@ -129,7 +129,15 @@ body {
     background-color: #c0c4c5;
     color: #004d66;
 }
-
+.hero-services {
+    height: 450px;
+    background-image: linear-gradient(rgba(1,1,1,0.9), rgba(0,0,0,0.4)), url('/images/servicehero.png');
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
 /*footer*/
 .footer {
     background-color: #004d66; 
