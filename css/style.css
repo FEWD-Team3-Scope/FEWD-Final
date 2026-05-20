@@ -138,6 +138,17 @@ body {
     align-items: center;
     justify-content: center;
 }
+/*Services page*/
+.card {
+    height: 375px;
+    margin: 10px;
+    text-align: center;
+    box-shadow: 0 3px 10px rgba(45, 44, 44, 0.5);
+}
+.card p {
+    font-size: small;
+}
+
 /*footer*/
 .footer {
     background-color: #004d66; 
