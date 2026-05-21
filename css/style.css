@@ -255,6 +255,17 @@ body {
     background: transparent;
 }
 
+/*About Page*/
+.about {
+    background-color: #F6F6F6;
+}
+
+.values {
+  background-color: #72A6C2;
+  color: white;
+}
+
+
 /*footer*/
 .footer {
     background-color: #004d66; 
