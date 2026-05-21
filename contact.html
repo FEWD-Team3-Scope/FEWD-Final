@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -7,11 +8,14 @@
     <link rel="icon" type="image/png" href="images/favicon.png">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Nanum+Myeongjo&family=Nunito:ital,wght@0,200..1000;1,200..1000&family=Raleway:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Nanum+Myeongjo&family=Nunito:ital,wght@0,200..1000;1,200..1000&family=Raleway:ital,wght@0,100..900;1,100..900&display=swap"
+        rel="stylesheet">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
     <link rel="stylesheet" href="css/style.css">
 </head>
+
 <body>
     <nav class="navbar navbar-expand-lg navbar-light bg-white sticky-top py-3">
         <div class="container">
@@ -32,16 +36,240 @@
             </div>
         </div>
     </nav>
+    <main>
+        <section class="hero-fifth">
+            <h1>Get in touch &ndash; we're here to help</h1>
+            <p>Have a question about your registration? Ready to get started? Reach out and our San Diego team will
+                respond the same business day.</p>
+            <div class="hero-fifth-btns">
+                <a href="#contact-form" class="btn-outline-dark">Submit a Request </a>
+                <a href="#services" class="btn-outline-dark">Learn More</a>
+            </div>
+        </section>
+        <section class="info-bar">
+            <div class="info-bar-cell">
+                <i class="fas fa-phone info-bar-icon"></i>
+                <div>
+                    <h3>Phone</h3>
+                    <a href="tel:18004354242">1-800-435-4242 </a>
+                    <p>Mon-Fri 9am &ndash;6pm<br>Sat 10pm-2pm</p>
+                    </p>
+                </div>
+            </div>
+            <div class="info-bar-cell">
+                <i class="fas fa-envelope info-bar-icon"></i>
+                <div>
+                    <h3>Email</h3>
+                    <a href="mailto:info@registry.com">support@registry.com</a>
+                    <p>Same-day response guaranteed</p>
+                </div>
+            </div>
+            <div class="info-bar-cell">
+                <i class="fas fa-map-marker-alt info-bar-icon"></i>
+                <div>
+                    <h3>Office</h3>
+                    <p>1420 Harbor Dr,<br>San Diego, CA 92101</p>
+                </div>
+        </section>
+        <!-- ════ FORM ════ -->
+        <section class="form-section" id="contact-form">
+            <div class="form-inner">
+                <h2>Send us a message</h2>
+                <p>Fill out the form below and we'll follow up within one business day.</p>
+
+                <form id="contactForm" novalidate>
+
+                    <!-- ── Fieldset 1: Personal Info ── -->
+                    <fieldset>
+                        <legend>Personal Information</legend>
+
+                        <!-- Row 1: First, Last, Email -->
+                        <div class="row-3">
+                            <div class="form-group">
+                                <label class="field-label" for="firstName">First Name <span class="req">*</span></label>
+                                <input type="text" id="firstName" name="firstName" placeholder="First Name" required
+                                    pattern="[A-Za-z\s\-']{2,}" autocomplete="given-name">
+                                
+                            </div>
+                            <div class="form-group">
+                                <label class="field-label" for="lastName">Last Name <span class="req">*</span></label>
+                                <input type="text" id="lastName" name="lastName" placeholder="Last Name" required
+                                    pattern="[A-Za-z\s\-']{2,}" autocomplete="family-name">
+                            </div>
+                            <div class="form-group">
+                                <label class="field-label" for="phone">Phone Number</label>
+                                <input type="tel" id="phone" name="phone" placeholder="(619)555-0000"
+                                    pattern="\(?\d{3}\)?[\s\-]?\d{3}[\s\-]?\d{4}" autocomplete="tel">
+                                
+                            </div>
+                            <div class="form-group">
+                                <label class="field-label" for="email">Email Address <span class="req">*</span></label>
+                                <input type="email" id="email" name="email" placeholder="you@example.com" required
+                                    autocomplete="email">
+                            </div>
+                        </div>
+
+                        <!-- Row 2: Service Type (dropdown) -->
+                        <div class="row-2">
+
+                            <div class="form-group">
+                                <label class="field-label" for="serviceType">Service Type <span
+                                        class="req">*</span></label>
+                                <select id="serviceType" name="serviceType" required>
+                                    <option value="" disabled selected>Select a Service</option>
+                                    <option value="registration">New Registration</option>
+                                    <option value="renewal">Renewal</option>
+                                    <option value="transfer">Transfer</option>
+                                    <option value="correction">Correction / Amendment</option>
+                                    <option value="duplicate">Duplicate Document</option>
+                                    <option value="other">Other</option>
+                                </select>
+                            </div>
+                        </div>
+                    </fieldset>
+
+                    <!-- ── Fieldset 2: Inquiry Details ── -->
+                    <fieldset>
+                        <legend>Inquiry Details</legend>
+
+                        <!-- Subject -->
+                        <div class="row-1">
+                            <div class="form-group">
+                                <label class="field-label" for="subject">Subject <span class="req">*</span></label>
+                                <input type="text" id="subject" name="subject"
+                                    placeholder="e.g. Question about my registration" required minlength="5"
+                                    maxlength="120">
+                            
+                            </div>
+                        </div>
+
+                        <!-- Inquiry type: radio buttons -->
+                        <div class="form-group" style="margin-bottom:1.25rem;">
+                            <label class="field-label">Type of Inquiry <span class="req">*</span></label>
+                            <div class="toggle-group" role="radiogroup">
+                                <div class="toggle-pill">
+                                    <input type="radio" id="inqGeneral" name="inquiryType" value="general" required>
+                                    <label for="inqGeneral">General Question</label>
+                                </div>
+                                <div class="toggle-pill">
+                                    <input type="radio" id="inqRegistration" name="inquiryType" value="registration">
+                                    <label for="inqRegistration">Registration Help</label>
+                                </div>
+                                <div class="toggle-pill">
+                                    <input type="radio" id="inqDocument" name="inquiryType" value="document">
+                                    <label for="inqDocument">Document Request</label>
+                                </div>
+                                <div class="toggle-pill">
+                                    <input type="radio" id="inqBilling" name="inquiryType" value="billing">
+                                    <label for="inqBilling">Billing</label>
+                                </div>
+                                <div class="toggle-pill">
+                                    <input type="radio" id="inqOther" name="inquiryType" value="other">
+                                    <label for="inqOther">Other</label>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Preferred contact: checkboxes -->
+                        <div class="form-group" style="margin-bottom:1.25rem;">
+                            <label class="field-label">Preferred Contact Method(s)</label>
+                            <div class="toggle-group">
+                                <div class="toggle-pill">
+                                    <input type="checkbox" id="prefEmail" name="contactPref" value="email">
+                                    <label for="prefEmail">Email</label>
+                                </div>
+                                <div class="toggle-pill">
+                                    <input type="checkbox" id="prefPhone" name="contactPref" value="phone">
+                                    <label for="prefPhone">Phone Call</label>
+                                </div>
+                                <div class="toggle-pill">
+                                    <input type="checkbox" id="prefText" name="contactPref" value="text">
+                                    <label for="prefText">Text / SMS</label>
+                                </div>
+                                <div class="toggle-pill">
+                                    <input type="checkbox" id="prefChat" name="contactPref" value="chat">
+                                    <label for="prefChat">Live Chat</label>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Best time to reach: list box -->
+                        <div class="row-2">
+                            <div class="form-group">
+                                <label class="field-label" for="contactTime">
+                                    Best Time to Reach You
+                                    <span style="font-weight:400;opacity:0.7;font-size:0.78rem;"> (Press Ctrl/⌘ for
+                                        multiple selections)</span>
+                                </label>
+                                <select id="contactTime" name="contactTime" multiple>
+                                    <option value="morning">Morning (9am – 12pm)</option>
+                                    <option value="midday">Midday (12pm – 2pm)</option>
+                                    <option value="afternoon">Afternoon (2pm – 5pm)</option>
+                                    <option value="evening">Evening (5pm – 7pm)</option>
+                                    <option value="anytime">Anytime is fine</option>
+                                </select>
+                            </div>
+                            <div class="form-group">
+                                <label class="field-label" for="hearAbout">How Did You Hear About Us?</label>
+                                <select id="hearAbout" name="hearAbout">
+                                    <option value="" disabled selected>— Select —</option>
+                                    <option value="search">Search Engine</option>
+                                    <option value="social">Social Media</option>
+                                    <option value="friend">Friend or Family</option>
+
+                                    <option value="ad">Advertisement</option>
+                                    <option value="other">Other</option>
+                                </select>
+                            </div>
+                        </div>
+
+                        <!-- Additional Notes: textarea -->
+                        <div class="form-group" style="margin-bottom:0;">
+                            <label class="field-label" for="message">Additional Notes or Question <span
+                                    class="req">*</span></label>
+                            <textarea id="message" name="message" placeholder="" required minlength="10"
+                                maxlength="2000"></textarea>
+                           
+                        </div>
+                    </fieldset>
+
+
+
+                    <button type="submit" class="btn-submit">
+                        Submit a request
+                    </button>
+
+                </form>
+            </div>
+        </section>
+
+        <!-- ════ MAP SECTION ════ -->
+        <section class="map-section">
+            <div class="map-text">
+                <h2>Visit our San Diego Office</h2>
+                <p>We are conveniently located near San Diego waterfront. Walk-ins are welcome during business hours
+                    &ndash; no appointments needed for simple renewals.</p>
+            </div>
+            <div class="map-embed">
+                <iframe title="San Diego Office Location" loading="lazy" referrerpolicy="no-referrer-when-downgrade"
+                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3355.0!2d-117.175!3d32.715!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x80d9536f0e5f7a0b%3A0x0!2s1420+Harbor+Dr%2C+San+Diego%2C+CA+92101!5e0!3m2!1sen!2sus!4v1680000000000">
+                </iframe>
+            </div>
+        </section>
+    </main>
+
+
 
     <footer class="footer py-5">
         <div class="container">
             <div class="row align-items-center">
-    
+
                 <div class="col-md-4 text-center text-md-start footer-legal">
                     <p class="mb-1 fw-bold">Registry - Vehicle Registration Services</p>
                     <p class="mb-0 small opacity-75">
-                        © 2026 All Rights Reserved | 
-                        <a href="privacy-policy.html" class="text-white text-decoration-none hover-underline">Privacy Policy</a>
+                        © 2026 All Rights Reserved |
+                        <a href="privacy-policy.html" class="text-white text-decoration-none hover-underline">Privacy
+                            Policy</a>
                     </p>
                 </div>
 
@@ -57,11 +285,14 @@
                     <a href="https://youtube.com" target="_blank" class="me-3"><i class="fab fa-youtube"></i></a>
                     <a href="https://tiktok.com" target="_blank"><i class="fab fa-tiktok"></i></a>
                 </div>
-    
+
             </div>
         </div>
+
+
     </footer>
 
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
 </body>
+
 </html>
