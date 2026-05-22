@@ -136,7 +136,7 @@ body {
 }
 .hero-services {
     height: 450px;
-    background-image: linear-gradient(rgba(1,1,1,0.9), rgba(0,0,0,0.4)), url('/images/servicehero.png');
+    background-image: linear-gradient(rgba(1,1,1,0.9), rgba(0,0,0,0.4)), url('../images/servicehero.png');
     background-size: cover;
     background-position: center;
     display: flex;
