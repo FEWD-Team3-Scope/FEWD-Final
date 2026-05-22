@@ -260,14 +260,15 @@ body {
     background: transparent;
 }
 
+
 /*About Page*/
 .about {
     background-color: #F6F6F6;
 }
 
 .values {
-  background-color: #72A6C2;
-  color: white;
+    background-color: #4A90E2;
+    color: white;
     width: 100%;
 }
 
