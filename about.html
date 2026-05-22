@@ -20,12 +20,19 @@
 </head>
 
 <body>
+    <header>
     <nav class="navbar navbar-expand-lg navbar-light bg-white sticky-top py-3">
         <div class="container">
             <a class="navbar-brand" href="index.html">
                 <img src="images/logo.png" alt="Registry Logo" height="50">
             </a>
-            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+            <button class="navbar-toggler"
+                    type="button"
+                    data-bs-toggle="collapse"
+                    data-bs-target="#navbarNav"
+                    aria-controls="navbarNav"
+                    aria-expanded="false"
+                    aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
             </button>
             <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
@@ -39,9 +46,10 @@
             </div>
         </div>
     </nav>
-
+    </header>
+    <main>
     <!--About Section-->
-    <section class="about py-5">
+    <section class="about-section py-5">
         <div class="container">
             <div class="row align-items-center">
                 <div class="col-md-6 text-center text-md-start">
@@ -67,7 +75,7 @@
     </section>
 
     <!-- Location Section -->
-    <section class="about py-5">
+    <section class="location-section py-5">
         <div class="container">
             <div class="row align-items-center">
 
@@ -81,7 +89,7 @@
 
                     <p>
                         Registry is located at:<br>
-                        <b>123 Four St <br> San Diego, CA 92101</b>
+                        <strong>123 Four St <br> San Diego, CA 92101</strong>
                         <br><br>
 
                         Hours:<br>
@@ -159,7 +167,8 @@
             </div>
         </div>
     </section>
-
+    </main>
+    
     <footer class="footer py-5">
         <div class="container">
             <div class="row align-items-center">
