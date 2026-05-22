@@ -117,9 +117,9 @@ body {
     background-size: cover;
     background-position: center;
 }
-.card-reg { background-image: url('/images/registerCar.jpeg'); }
-.card-renew { background-image: url('/images/renewalTips.jpg'); }
-.card-transfer { background-image: url('/images/transferguide.jpg'); }
+.card-reg { background-image: url('../images/registerCar.jpeg'); }
+.card-renew { background-image: url('../images/renewalTips.jpg'); }
+.card-transfer { background-image: url('../images/transferguide.jpg'); }
 
 .tip-overlay {
     background: rgba(0, 0, 0, 0.4);
