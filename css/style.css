@@ -635,7 +635,7 @@ textarea:not(:placeholder-shown):invalid {
     .footer .col-md-4:last-child {
         margin-bottom: 0;
     }
-    
+
     /* Contact Page */
     .hero-fifth {
         padding: 30px 15px;
@@ -652,14 +652,19 @@ textarea:not(:placeholder-shown):invalid {
         margin-bottom: 1.5rem;
     }
     .hero-fifth-btns {
-        flex-direction: column;
-        gap: 0.75rem;
+        
+        display: block !important;
+        width: 90% !important; 
+        max-width: 400px;
+        margin: 0 auto;
+        padding: 15px;
     }
     .btn-outline-dark {
-        display: block;
+        display: block !important;
+        width: 100%;
         padding: 12px 25px;
         font-size: 1rem;
-        width: 100%; 
+        margin-bottom: 10px;
     }
     .info-bar {
         display: grid;
@@ -675,9 +680,7 @@ textarea:not(:placeholder-shown):invalid {
         width: 100%;
     }
     .form-inner h2 {
-        font-size: 1.4rem;
-        margin-bottom: .25rem;
-
+        font-size: 1.4rem;   
     }
     .form-inner > p {
         font-size: 1rem;
@@ -693,7 +696,7 @@ textarea:not(:placeholder-shown):invalid {
         width: 100%;
     }
     .btn-submit {
-        margin: 0 auto;
+        margin: 1rem auto;
         width: 100%;
         max-width: 300px;
         padding: 12px 25px;
